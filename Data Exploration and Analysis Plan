@@ -1,0 +1,32 @@
+Question 1
+What data have you gathered, and how did you gather it?
+Answer 1
+I gathered Lot Number, Lot Type, Sample Point, Sample Collection Date, Organism Name, and Organism Count online from a product that no
+longer exists.
+Question 2
+Which areas of the data have you cleaned, and which areas still need cleaning?
+Answer 2
+I did some of the data cleaning in Excel instead of Python. The majority of the hundreds of data points I gathered were 0 CFU/mL or 
+0 CFU/plate for growth. Since that skews the data, I filtered them out. In Python, I removed the species from Organism Name and only kept 
+the genus since my assumption was that the same genus behaves similarly. I could add in a feature that groups the different Organism Name
+by type-bacteria, mold, and yeast-instead of lumping them all together as bacteria.
+Question 3
+What steps have you taken to explore the data?
+Answer 3
+I created histograms of mean bacterial growth by Month and by Year. I also ran Confusion Matrices and Feature Importance for
+Linear (Logistic Regression), Decision Trees, and Random Forests.
+Question 4
+What insights have you gained from your exploration?
+Answer 4
+None of my models do a good job of estimating bacterial contamination. Based on the Confusion Matrices, I can predict the True 0 fairly 
+well. I have a hard time predicting True 1.
+Question 5
+Will you be able to answer your question with this data, or do you need to gather more data (or adjust your question)?
+Answer 5
+I don't know if I will be able to answer my question of modeling bacterial population based on feature importances. Random features are
+coming up as important. For ex. 'Unattainable' which shows up when there's lack of information keeps coming up as the most important
+feature. This does not help.
+Question 6
+How might you use modeling to answer your question?
+Answer 6
+I'm not sure how to use modeling to answer my question. I don't know if there is a pattern for bacteria. 
